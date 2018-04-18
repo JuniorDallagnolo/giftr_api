@@ -87,7 +87,7 @@ The response will be a JSON object containing the newly created person, the code
     "code": 201,
     "data": {
         "person_id": "26",
-        "person_name": "Obi Wan Kenobi"",
+        "person_name": "Obi Wan Kenobi",
         "person_dob": "2001-02-02"
     },
     "message": "Person Added"
