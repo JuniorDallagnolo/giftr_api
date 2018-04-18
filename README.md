@@ -1,4 +1,4 @@
-######### GIFTR API #########
+## GIFTR API 
 MAD9023 Final Project GIFTR APP Backend - FIRST RESTFUL API using vanilla PHP and SQL
 
 The API contain Three endpoints resources - USERS , PEOPLE , GIFTS
@@ -23,10 +23,10 @@ These all the http response codes the API returns for now:
 ```javascript
 {"code":200, "message":"User Found"}
 ```
-##### USERS RESOURCE #####
+## USERS RESOURCE 
 The USERS resource accept POST and GET methods.
 [https://dall0078.edumedia.ca/mad9023/giftr/api/users](https://dall0078.edumedia.ca/mad9023/giftr/api/users)
-## POST METHOD ## Register a user
+# POST METHOD # Register a user
 To use the Giftr API you must start by calling the users resource with a POST method 
 The users resource with POST method requires **device_id** be passed through the request body as FormData.
 It will return a JSON object containing a token. 
