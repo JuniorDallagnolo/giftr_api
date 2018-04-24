@@ -1,6 +1,8 @@
 # GIFTR API 
 MAD9023 Final Project GIFTR APP Backend - FIRST RESTFUL API using vanilla PHP and SQL
 
+#### Serverside FIX - Depending on the server you use you might need to put .php extension on controllers endpath
+
 The API contain Three endpoints resources - USERS , PEOPLE , GIFTS
 
 The initial call should be to the Users resource [https://dall0078.edumedia.ca/mad9023/giftr/api/users](https://dall0078.edumedia.ca/mad9023/giftr/api/users). So you generate a token to use for all future calls.
