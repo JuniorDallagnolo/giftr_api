@@ -14,7 +14,11 @@ require_once "../includes/class_Response.php";
 require_once "../includes/inc_dblink.php";
 require_once "../includes/inc_auth.php";
 
-if($auth) {
+// check for the OPTIONS REQ… no auth needed here
+if ($httpMethod === "OPTIONS") {
+    $resp = new Response(200, array(), "OK");
+}
+else if($auth) {
     
     switch ($httpMethod) {
         case "GET":

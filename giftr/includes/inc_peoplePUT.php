@@ -1,9 +1,13 @@
 <?php
 //TRANSFORMING PUT INTO A GLOBAL VARIABLE USING A STREAM CLASS TO READ RAW DATA
-require_once "class_Stream.php";
-$data = array();
-new stream($data);
-$_PUT = $data['post'];
+//require_once "class_Stream.php";
+//$data = array();
+//new stream($data);
+//$_PUT = $data['post'];
+
+//WORKING SOLUTION
+$rawString = file_get_contents("php://input");
+$_PUT = json_decode($rawString, true);
 
 //CHECK AND VALIDATE THE PARAMETERS PASSED
 require_once "inc_personValidation.php";
